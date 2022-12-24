@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+  /*header*/
+  .bg-img {
+   
+    background-image: url("sp-pic1.jpgk"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(167, 27, 27);
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(4, 4, 4);
+    color:black;
+  }
+  .nav-link{
+    color: white;
+  }
+
+/*/section codents/*/
+
+.start-1 {
+    left: 85px;
+}
+.bottom-1{
+    bottom: 155px;
+}
+.start-2 {
+    left: 85px;
+}
+.bottom-2{
+    bottom: 155px;
+}
+.start-3 {
+    left: 85px;
+}
+.bottom-3{
+    bottom: 155px;
+}
+.start-4 {
+    left: 85px;
+}
+.bottom-4{
+    bottom: 155px;
+}
+.start-5 {
+    left: 85px;
+}
+.bottom-5{
+    bottom: 155px;
+}
+.footer{
+    color: rgb(251, 253, 254);
+    
+}
+.footer a{
+    /* margin-left: 20px; */
+    font-weight: 500;
+    font-size: small;
+}

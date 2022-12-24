@@ -1,0 +1,566 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500&subset=latin-ext);.header {
+    text-align: center;
+    padding: 14px;
+    position: relative;
+    line-height: 1.5rem;
+}
+
+.header h3 {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 5px;
+}
+
+.header__back, .header__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    fill: #9da6b8;
+}
+
+.header__back {
+    left: 0;
+}
+
+.header__close {
+    right: 0;
+}.inspector {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 30px 50px 0 rgba(44,49,59,0.20);
+    max-height: 675px;
+    min-width: 310px;
+    overflow: hidden;
+}
+
+.inspector__content {
+    background: #f6f6f6;
+    padding: 10px 19px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 560px;
+}
+
+.inspector__content--small {
+    padding: 0;
+    height: 545px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.1rem;
+    color: #5a6170;
+    font-family: "Poppins", sans-serif;
+    margin: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #9da6b8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.inspector__main_content_wrapper {
+    position: relative;
+}.group-name {
+    color: #6c63ff;
+    padding: 5px 0 3px 0;
+    font-size: 1.6rem;
+}
+
+.color-property {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color-property:not(:first-child) {
+    position: relative;
+}
+
+.color-property__group.color-property {
+    position: relative;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.color-property:hover h1 {
+    opacity: 0.8;
+}
+
+.color-property:hover .color-property--copy {
+    opacity: 1;
+}
+
+.color-property--name-wrapper {
+    margin-left: 22px;
+}
+
+.color-property--name {
+    opacity: 0.6;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.color-property h1 {
+    font-size: 2.4rem;
+    font-weight: lighter;
+}
+
+.color-property--copy {
+    margin: 6px 22px;
+    padding: 12px;
+    border-radius: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.property {
+    display: inline-block;
+    width: 50%;
+}
+
+.property__wide {
+    width: 100%;
+}
+
+.property__tall {
+    margin-bottom: 5px;
+}
+
+.property__color, .property__asset {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transform: translateY(6px);
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.property__asset {
+    background-size: cover !important;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.property__asset-container {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    box-sizing: border-box;
+}
+
+.property__asset-container:hover {
+    background: white;
+}
+
+.property__asset-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.property__value {
+    margin: 2px 0 12px 0;
+    display: inline-block;
+}
+
+.property-group__header {
+    color: #484e5d;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.property-group {
+    margin-bottom: 27px;
+}
+
+.og-image {
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    font-size: 1rem;
+    border-radius: 1px;
+}
+
+.box__margin {
+    height: 138px;
+    width: 258px;
+    border: dotted 1px #6c63ff;
+}
+
+.box__padding {
+    height: 78px;
+    width: 168px !important;
+    flex-shrink: 0;
+    background-image: linear-gradient(65deg, rgba(107, 98, 255, 0.59), rgba(107, 98, 255, 0));
+    border: solid 1px #6c63ff;
+}
+
+.box__node {
+    color: #f4f6f9;
+    background: #373c46;
+    flex-shrink: 0;
+    min-height: 18px;
+    width: 78px !important;
+}
+
+.box__row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.box > * {
+    width: 100%;
+    text-align: center;
+}
+
+.box:not(.box__row) {
+    justify-content: space-around;
+}
+
+.round-handler {
+    height: 5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    background-color: #f6f6f6;
+}
+
+.image-model__image {
+    width: calc(100% + 38px);
+    position: relative;
+    left: -19px;
+}
+
+.image-model__name {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #373c46;
+}
+
+.image-model__size {
+    font-size: 1.4rem;
+    color: #7c869b;
+    margin-top: 12px;
+}
+
+.image-model__button {
+    border-radius: 2px;
+    background: #6c63ff;
+    color: #ffffff;
+    fill: #ffffff;
+    border: none;
+    outline: none;
+    display: flex;
+    padding: 12px 9px;
+    cursor: pointer;
+}
+.image-model__button span {
+    font-size: 10px;
+    letter-spacing: 1.1px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.image-model a {
+    text-decoration: none;
+}.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs li {
+    width: 100%;
+}
+
+.tab {
+    display: inline-block;
+    text-align: center;
+    flex-grow: 1;
+    padding: 16px 0;
+    color: #9da6b8;
+    fill: #9da6b8;
+    cursor: pointer;
+    width: 100%
+}
+
+.tab > div {
+    position: relative;
+    display: inline-block;
+}
+
+.tab > div:after {
+    position: absolute;
+    content: ' ';
+    left: 2px;
+    right: 2px;
+    bottom: -8px;
+}
+
+.tab__active > div:after {
+    border-bottom: 2px solid #6c63ff;
+}
+
+.tab:hover {
+    background-color: rgba(243, 245, 249, 0.5);
+}
+
+.tab svg {
+    min-height: 16px;
+}
+
+.tab__active {
+    color: #6c63ff;
+    fill: #6c63ff;
+}
+
+.inspector__tab--padding {
+    padding: 10px 19px;
+}.genera-tab__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.assets-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asset {
+    width: 50%;
+    padding-bottom: 50%;
+    overflow: hidden;
+    margin:0;
+    position: relative;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 2 2" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="2" height="2" fill="#ffffff"/><rect x="1" y="0" width="1" height="1" fill="#f6f6f6"/><rect x="0" y="1" width="1" height="1" fill="#f6f6f6"/></svg>');
+    background-size: 10px;
+    will-change: transform;
+}
+
+.asset--properties {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.asset--image {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.asset:hover .asset--properties {
+    opacity: 1;
+}
+.asset:hover .asset--download {
+    transform: translateY(0);
+}
+
+.asset:hover .asset--description {
+    transform: translateY(0);
+}
+
+.asset--download {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: #7d808e;
+    text-decoration: none;
+    color: white;
+    fill: white;
+    font-weight: bold;
+    border-radius: 50px;
+    left: 6px;
+    top: 6px;
+    padding: 2px 10px;
+    transform: translateY(-30px);
+    transition: all 0.5s;
+}
+
+.asset--download:hover {
+    fill: #6c63ff;
+    color: #373c46;
+    background: white;
+}
+
+.asset--download > *:first-child {
+    margin-right: 5px;
+}
+
+.asset__download > span {
+    transform: translateY(1px);
+}
+
+.asset--description {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6px;
+    background: rgba(0,0,0,0.5);
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+
+
+.asset--description__name {
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+}
+
+.asset--description__size {
+    color: #a7aaae;
+}
+
+.download-assets {
+    position: absolute;
+    font-weight: bold;
+    color: #6c63ff;
+    text-transform: none;
+    top: 20px;
+    cursor: pointer;
+}.tooltip--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    color: #c6d0e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-150%);
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.tooltip--content {
+    border-radius: 2px;
+    padding: 6px 9px;
+    background-color: #373c46;
+    box-shadow: 0 4px 8px 0 rgba(44, 48, 59, 0.3);
+    text-transform: uppercase;
+}
+
+.tooltip--wrapper:hover > .tooltip{
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.tooltip:after {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #373c46;
+}.notification--wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 100000;
+}
+
+.notification {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.5s;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100px;
+}
+
+.notification__show {
+    opacity: 1;
+}
+
+.notification--content {
+    padding: 9px 10px;
+    border-radius: 1px;
+    background: #373c46;
+    color: #c6d0e4;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 9px 0 rgba(44, 48, 59, 0.6);
+}
+
+.notification__show .notification--content {
+    transform: translateY(10px);
+}</style><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script>var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-89379171-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = 'https://ssl.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script></head><body><div data-reactroot=""><div class="inspector"><div class="header"><div class="header__back"><div class="tooltip--wrapper"><div class="tooltip"><div class="tooltip--content">Back</div></div><div><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="CSS-Peeper-2.0" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="csspeeper-icons" transform="translate(-425.000000, -353.000000)" fill-rule="nonzero">
+            <path d="M430.707107,354.707107 C431.097631,354.316582 431.097631,353.683418 430.707107,353.292893 C430.316582,352.902369 429.683418,352.902369 429.292893,353.292893 L425.292893,357.292893 C424.902369,357.683418 424.902369,358.316582 425.292893,358.707107 L429.292893,362.707107 C429.683418,363.097631 430.316582,363.097631 430.707107,362.707107 C431.097631,362.316582 431.097631,361.683418 430.707107,361.292893 L427.414214,358 L430.707107,354.707107 Z" id="back-ico"></path>
+        </g>
+    </g>
+</svg></div></div></div><h3>Inspector</h3><div class="header__close"><div class="tooltip--wrapper"><div class="tooltip"><div class="tooltip--content">Quit</div></div><div><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="CSS-Peeper-2.0" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="csspeeper-icons" transform="translate(-350.000000, -272.000000)" fill-rule="nonzero">
+            <path d="M356.414214,277 L359.707107,273.707107 C360.097631,273.316582 360.097631,272.683418 359.707107,272.292893 C359.316582,271.902369 358.683418,271.902369 358.292893,272.292893 L355,275.585786 L351.707107,272.292893 C351.316582,271.902369 350.683418,271.902369 350.292893,272.292893 C349.902369,272.683418 349.902369,273.316582 350.292893,273.707107 L353.585786,277 L350.292893,280.292893 C349.902369,280.683418 349.902369,281.316582 350.292893,281.707107 C350.683418,282.097631 351.316582,282.097631 351.707107,281.707107 L355,278.414214 L358.292893,281.707107 C358.683418,282.097631 359.316582,282.097631 359.707107,281.707107 C360.097631,281.316582 360.097631,280.683418 359.707107,280.292893 L356.414214,277 Z" id="close-ico"></path>
+        </g>
+    </g>
+</svg></div></div></div></div><div class="notification--wrapper"><div class="notification "><div class="notification--content"></div></div></div><div class="inspector__main_content_wrapper"><section><div class="inspector__content"><h2 class="group-name">.header-inner</h2><section class="property-group"><h3 class="property-group__header">Object properties</h3><div><div class="box box__margin"><div><!-- react-text: 72 -->-<!-- /react-text --></div><div class="box box__row"><div><!-- react-text: 75 -->-<!-- /react-text --></div><div class="box box__padding"><div><!-- react-text: 78 -->-<!-- /react-text --></div><div class="box box__row"><div><!-- react-text: 81 -->-<!-- /react-text --></div><div class="box box__node"><!-- react-text: 83 -->1400<!-- /react-text --><!-- react-text: 84 --> x <!-- /react-text --><!-- react-text: 85 -->100<!-- /react-text --></div><div><!-- react-text: 87 -->-<!-- /react-text --></div></div><div><!-- react-text: 89 -->-<!-- /react-text --></div></div><div><!-- react-text: 91 -->-<!-- /react-text --></div></div><div><!-- react-text: 93 -->-<!-- /react-text --></div></div></div></section><section class="property-group"><h3 class="property-group__header">Typeface</h3><div><div class="property property__wide"><h4>font-family</h4><span class="property__value">D-DIN-Regular, Arial, Verdana, sans-serif</span></div><div class="property"><h4>font-size</h4><span class="property__value">16px</span></div><div class="property"><h4>line-height</h4><span class="property__value">26px</span></div><div class="property"><h4>text-align</h4><span class="property__value">left</span></div><div class="property"><h4>letter-spacing</h4><span class="property__value">normal</span></div></div></section><section class="property-group"><h3 class="property-group__header">Colors</h3><div><div class="color-property color-property__group" style="background: rgb(255, 255, 255);"><div class="color-property--name-wrapper"><span class="color-property--name" style="color: black;">Fill</span><h1 style="color: black;">#ffffff</h1></div><div class="tooltip--wrapper"><div class="tooltip"><div class="tooltip--content">COPY</div></div><div class="color-property--copy" style="fill: rgb(255, 255, 255); background: black;"><div><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="CSS-Peeper-2.0" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="csspeeper-icons" transform="translate(-424.000000, -272.000000)">
+            <path d="M429.625,276.125 L431.875,278.375 L428.5,281.75 C428.5,281.75 427,282.2 427,282.5 C427,283.325 426.325,284 425.5,284 C424.675,284 424,283.325 424,282.5 C424,281.675 424.675,281 425.5,281 C425.8,281 426.25,279.5 426.25,279.5 L429.625,276.125 Z M434.425,275.825 L435.925,277.325 L434.5,278.75 L429.25,273.5 L430.675,272.075 L432.175,273.575 L433.3,272.45 C433.9,271.85 434.95,271.85 435.55,272.45 C436.15,273.05 436.15,274.1 435.55,274.7 L434.425,275.825 Z" id="colorpicker-ico"></path>
+        </g>
+    </g>
+</svg></div></div></div></div><div class="color-property color-property__group" style="background: rgb(0, 0, 0);"><div class="color-property--name-wrapper"><span class="color-property--name" style="color: white;">Background</span><h1 style="color: white;">#000000</h1></div><div class="tooltip--wrapper"><div class="tooltip"><div class="tooltip--content">COPY</div></div><div class="color-property--copy" style="fill: rgb(0, 0, 0); background: white;"><div><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="CSS-Peeper-2.0" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="csspeeper-icons" transform="translate(-424.000000, -272.000000)">
+            <path d="M429.625,276.125 L431.875,278.375 L428.5,281.75 C428.5,281.75 427,282.2 427,282.5 C427,283.325 426.325,284 425.5,284 C424.675,284 424,283.325 424,282.5 C424,281.675 424.675,281 425.5,281 C425.8,281 426.25,279.5 426.25,279.5 L429.625,276.125 Z M434.425,275.825 L435.925,277.325 L434.5,278.75 L429.25,273.5 L430.675,272.075 L432.175,273.575 L433.3,272.45 C433.9,271.85 434.95,271.85 435.55,272.45 C436.15,273.05 436.15,274.1 435.55,274.7 L434.425,275.825 Z" id="colorpicker-ico"></path>
+        </g>
+    </g>
+</svg></div></div></div></div></div></section><div></div></div></section><div class="round-handler"></div></div></div></div></body></html>
