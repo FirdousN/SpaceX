@@ -3,51 +3,53 @@
     margin: 0;
 
 }
-
 .letter_s path {
-  fill: white;
+    fill: white;
 }
 
 .letter_p path {
-  fill: white;
+    fill: white;
 }
 
 .letter_a polygon {
-  fill: white;
+    fill: white;
 }
 
 .letter_c path {
-  fill: white;
+    fill: white;
 }
 
 .letter_e polygon,
 .letter_e rect {
-  fill: white;
+    fill: white;
 }
 
 .letter_x path {
-  fill: white;
+    fill: white;
 }
 
 .letter_swoosh path {
-  fill: white;
+    fill: white;
 }
-/* Add this in your style.css file */
+/* Update the existing styles for the logo */
 #spaceXLogo {
-  max-width: 100%; /* Ensure the logo doesn't exceed the width of its container */
-  height: auto; /* Maintain the aspect ratio while scaling */
-  margin-left: 10px; /* Adjust the margin as needed */
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio while scaling */
+    margin-left: 10px; /* Adjust the margin as needed */
 }
+
 /* Add this CSS rule to ensure the SVG inside the logo is responsive */
 #spaceXLogo svg {
-  width: 100%;
+    width: 100%;
 }
 
+/* Adjust other styles as needed for responsiveness */
 
 
+  /*header*/
   .bg-img {
    
-    background-image: url("sp-pic1.jpgk"); 
+    background-image: url("sp-pic1.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +89,7 @@
 
 /*/section codents/*/
 
-/* .start-1 {
+.start-1 {
     left: 85px;
 }
 .bottom-1{
@@ -116,7 +118,7 @@
 }
 .bottom-5{
     bottom: 155px;
-} */
+}
 .footer{
     color: rgb(251, 253, 254);
     
@@ -125,12 +127,4 @@
     /* margin-left: 20px; */
     font-weight: 500;
     font-size: small;
-} */
-
-
-  {@media screen and (max-width: 600px) {
-    div.text {
-      font-size: 20px;
-    }
-  }
 }
