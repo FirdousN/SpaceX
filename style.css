@@ -44,24 +44,6 @@
 }
 
 /* Adjust other styles as needed for responsiveness */
-/* Add the following styles to your CSS */
-.position-relative {
-    position: relative;
-}
-
-.position-absolute {
-    position: absolute;
-}
-
-/* Adjust these styles according to your layout needs */
-.bottom-1 {
-    bottom: 0;
-}
-
-.start-1 {
-    left: 0;
-}
-
 
   /*header*/
   .bg-img {
