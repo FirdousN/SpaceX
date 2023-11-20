@@ -31,6 +31,13 @@
 .letter_swoosh path {
     fill: white;
 }
+/* Add this in your style.css file */
+.svg-logo {
+    width: 220px;
+    height: auto; /* This will maintain the aspect ratio */
+    margin-left: 75px;
+    text-decoration: aliceblue;
+}
 
 
   /*header*/
