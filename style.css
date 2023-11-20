@@ -32,13 +32,15 @@
     fill: white;
 }
 /* Add this in your style.css file */
-/* .svg-logo {
-    width: 100px;
-    height: auto; /* This will maintain the aspect ratio */
-/*     margin-left: 75px;
-    text-decoration: aliceblue; */
-} */
-
+#spaceXLogo {
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio while scaling */
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+/* Add this CSS rule to ensure the SVG inside the logo is responsive */
+#spaceXLogo svg {
+    width: 100%;
+}
 
   /*header*/
   .bg-img {
