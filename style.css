@@ -33,7 +33,7 @@
 }
 /* Add this in your style.css file */
 .svg-logo {
-    width: 220px;
+    width: 100px;
     height: auto; /* This will maintain the aspect ratio */
     margin-left: 75px;
     text-decoration: aliceblue;
