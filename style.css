@@ -3,9 +3,35 @@
     margin: 0;
 
 }
-/* .letter_s{
+.letter_s path {
     fill: white;
-} */
+}
+
+.letter_p path {
+    fill: white;
+}
+
+.letter_a polygon {
+    fill: white;
+}
+
+.letter_c path {
+    fill: white;
+}
+
+.letter_e polygon,
+.letter_e rect {
+    fill: white;
+}
+
+.letter_x path {
+    fill: white;
+}
+
+.letter_swoosh path {
+    fill: white;
+}
+
 
   /*header*/
   .bg-img {
