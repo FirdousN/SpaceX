@@ -32,12 +32,12 @@
     fill: white;
 }
 /* Add this in your style.css file */
-.svg-logo {
+/* .svg-logo {
     width: 100px;
     height: auto; /* This will maintain the aspect ratio */
-    margin-left: 75px;
-    text-decoration: aliceblue;
-}
+/*     margin-left: 75px;
+    text-decoration: aliceblue; */
+} */
 
 
   /*header*/
