@@ -44,7 +44,7 @@
     width: 350px;
 }
 
-#logo img, #logo svg {
+ #logo svg {
     display: block;
     width: 100%;
     height: auto;
