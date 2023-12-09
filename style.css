@@ -40,7 +40,7 @@
 }
 
 /* Add this CSS rule to ensure the SVG inside the logo is responsive */
-#spaceXLogo svg {
+spaceXLogo{
     width: 90%;
 }
 
