@@ -41,7 +41,13 @@
 
 /* Add this CSS rule to ensure the SVG inside the logo is responsive */
 #spaceXLogo svg{
+    width: 350px;
+}
+
+#logo img, #logo svg {
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 /* Adjust other styles as needed for responsiveness */
