@@ -53,7 +53,7 @@
 /* Adjust other styles as needed for responsiveness */
 
 .container-fluid{
-        max-width: max-content;
+    max-width: 800px;
 }
   /*header*/
   .bg-img {
