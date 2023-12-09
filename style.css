@@ -33,15 +33,15 @@
     fill: white;
 }
 /* Update the existing styles for the logo */
-#spaceXLogo {
-    max-width: 100%; /* Ensure the logo doesn't exceed the width of its container */
+.spaceXLogo {
+    max-width: 80%; /* Ensure the logo doesn't exceed the width of its container */
     height: auto; /* Maintain the aspect ratio while scaling */
     margin-left: 10px; /* Adjust the margin as needed */
 }
 
 /* Add this CSS rule to ensure the SVG inside the logo is responsive */
-spaceXLogo{
-    width: 90%;
+#spaceXLogo svg{
+    width: 100%;
 }
 
 /* Adjust other styles as needed for responsiveness */
